@@ -1,0 +1,16 @@
+$screen-xs-max: 320px;
+$screen-sm-min: 750px;
+$screen-lg-min: 970px;
+.container {
+  /* small devices */
+  @media screen and (min-width: $screen-xs-max){
+    width: 100%;
+  }
+  @media screen and (min-width: $screen-xs-max) and (max-width: $screen-sm-min){
+    width: 100%;
+  }
+  @media screen and (min-width: $screen-lg-min) {
+    width: 1200px;
+  }
+  height: auto;
+}
