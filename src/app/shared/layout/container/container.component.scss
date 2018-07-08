@@ -1,6 +1,4 @@
-$screen-xs-max: 320px;
-$screen-sm-min: 750px;
-$screen-lg-min: 970px;
+@import "../../../sharedValue";
 .container {
   /* small devices */
   @media screen and (min-width: $screen-xs-max){
@@ -12,5 +10,9 @@ $screen-lg-min: 970px;
   @media screen and (min-width: $screen-lg-min) {
     width: 1200px;
   }
-  height: auto;
+  @media screen and (max-width: $screen-lg-min) {
+    padding: 0 2px;
+  }
+  height: 100%;
+  margin: 0 auto;
 }

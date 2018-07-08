@@ -1,8 +1,22 @@
 <div class="nav">
-    <app-container>
+  <app-container>
+    <i class="anticon anticon-menu-fold nav-phone-icon" [nzContent]="navPhone"  nz-popover nzTrigger="click" nzPlacement="bottomRight"></i>
+    <ng-template #navPhone>
+      <ul nz-menu [nzMode]="'inline'">
+        <li nz-menu-item [nzSelected]="true"> Home</li>
+        <li nz-menu-item> Telephone</li>
+      </ul>
+    </ng-template>
+    <div nz-row>
+      <div class="logo-col" nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="8" nzXl="5" [nzXXl]="4">
+        <a href="/" class="nav-logo"></a>
+      </div>
+      <div class="menu-col" nz-col nzXs="0" nzSm="0" nzMd="16" nzLg="16" nzXl="19" [nzXXl]="20">
         <ul nz-menu [nzMode]="'horizontal'">
-            <li nz-menu-item> Home</li>
-            <li nz-menu-item> Telephone</li>
+          <li nz-menu-item [nzSelected]="true"> Home</li>
+          <li nz-menu-item> Telephone</li>
         </ul>
-    </app-container>
+      </div>
+    </div>
+  </app-container>
 </div>

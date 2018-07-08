@@ -7,7 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ContainerComponent} from './layout/container/container.component';
 /** 配置 angular i18n **/
 import {registerLocaleData} from '@angular/common';
-import zh from '@angular/common/locales/zh';
+import zh from '@angular/common/locales;
+import { AdCarouselComponent } from './ad-carousel/ad-carousel.component'/zh';
 
 registerLocaleData(zh);
 
@@ -19,7 +20,7 @@ registerLocaleData(zh);
         ReactiveFormsModule,
         NgZorroAntdModule, // Ant design framework
     ],
-    declarations: [ HeaderComponent, ContainerComponent],
+    declarations: [ HeaderComponent, ContainerCompo, AdCarouselComponentnent],
     exports: [
         HeaderComponent, NgZorroAntdModule, BrowserAnimationsModule, ContainerComponent
     ],
