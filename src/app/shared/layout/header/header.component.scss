@@ -29,7 +29,7 @@ $phone-menu-height: 28px;
     margin-top: ($nav-height-lg - $logo-height-lg)/2;
     background: transparent url("../../../../assets/logo-with20.svg") no-repeat scroll 0 0/100%;
     overflow: hidden;
-    @media screen and (max-width: $screen-lg-min) {
+    @media screen and (max-width: $screen-sm-min) {
       display: block;
       width: 118px;
       height: $logo-height-sm;
@@ -37,6 +37,9 @@ $phone-menu-height: 28px;
       margin-top: ceil(($nav-height-sm - $logo-height-sm)/2);
       margin-left: auto;
       margin-right: auto;
+    }
+    @media screen and (min-width: $screen-sm-min) {
+      margin-left: 40px;
     }
   }
 
