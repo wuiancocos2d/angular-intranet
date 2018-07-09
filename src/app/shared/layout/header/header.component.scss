@@ -7,10 +7,12 @@ $logo-height-sm: 30px;
 $phone-menu-height: 28px;
 .nav{
   height: $nav-height-lg;
+  box-shadow: 0 2px 8px #f0f1f2;
   .ant-menu-horizontal {
     height: 100%;
     line-height: $nav-height-lg;
     border: none;
+
   }
   @media screen and (max-width: $screen-sm-min){
      height: $nav-height-sm;

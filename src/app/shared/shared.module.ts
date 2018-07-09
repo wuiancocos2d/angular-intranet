@@ -5,10 +5,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgZorroAntdModule, NZ_I18N, zh_CN} from 'ng-zorro-antd'; // Ant design  framework
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ContainerComponent} from './layout/container/container.component';
+import { AdCarouselComponent } from './ad-carousel/ad-carousel.component';
 /** 配置 angular i18n **/
 import {registerLocaleData} from '@angular/common';
-import zh from '@angular/common/locales;
-import { AdCarouselComponent } from './ad-carousel/ad-carousel.component'/zh';
+import zh from '@angular/common/locales/zh';
+
 
 registerLocaleData(zh);
 
@@ -20,9 +21,9 @@ registerLocaleData(zh);
         ReactiveFormsModule,
         NgZorroAntdModule, // Ant design framework
     ],
-    declarations: [ HeaderComponent, ContainerCompo, AdCarouselComponentnent],
+    declarations: [ HeaderComponent, ContainerComponent, AdCarouselComponent],
     exports: [
-        HeaderComponent, NgZorroAntdModule, BrowserAnimationsModule, ContainerComponent
+        HeaderComponent, NgZorroAntdModule, BrowserAnimationsModule, ContainerComponent,AdCarouselComponent
     ],
 
     /** 配置 ng-zorro-antd 国际化 **/
