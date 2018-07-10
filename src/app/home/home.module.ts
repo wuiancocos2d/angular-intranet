@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
-import { HomeRoutingModule } from './home-routing.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HomeComponent} from './home.component';
+import {HomeRoutingModule} from './home-routing.module';
 
 // share component
-import { SharedModule } from '../shared';
-import { AdNewsService } from "../core/services";
+import {SharedModule} from '../shared';
+import {AdNewsService} from '../core/services';
 
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataAdNewsService } from "../core/mock";
+import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
+import {InMemoryDataAdNewsService} from '../core/mock';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { InMemoryDataAdNewsService } from "../core/mock";
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataAdNewsService, { dataEncapsulation: false }
+      InMemoryDataAdNewsService, {dataEncapsulation: false}
     )
   ],
   declarations: [HomeComponent],
@@ -28,4 +28,5 @@ import { InMemoryDataAdNewsService } from "../core/mock";
     AdNewsService
   ]
 })
-export class HomeModule { }
+export class HomeModule {
+}

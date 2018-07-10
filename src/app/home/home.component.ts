@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AdNewsService} from "../core";
+import {Component, OnInit} from '@angular/core';
+import {AdNewsService} from '../core';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,16 @@ import { AdNewsService} from "../core";
 })
 export class HomeComponent implements OnInit {
   adNewsList = [];
+
   constructor(
     private adNewsService: AdNewsService,
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
-    this.adNewsService.getAdNews().subscribe(adList => {this.adNewsList = adList});
+    this.adNewsService.getAdNews().subscribe(adList => {
+      this.adNewsList = adList;
+    });
 
   }
 
