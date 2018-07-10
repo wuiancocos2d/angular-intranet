@@ -1,8 +1,9 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
+import { AdNewsModel } from "../models";
 
 export class InMemoryDataAdNewsService implements InMemoryDbService {
   createDb() {
-    const adNewsList = [
+    const adNews: AdNewsModel[] = [
       {
         id: 1,
         imgUrl: 'https://felt.co.nz/listing-images/full/408093',
@@ -22,6 +23,6 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
         subTitle: 'Original Watercolor Painting'
       },
     ];
-    return adNewsList;
+    return {adNews};
   }
 }

@@ -13,10 +13,6 @@ import zh from '@angular/common/locales/zh';
 
 registerLocaleData(zh);
 
-/** mock 数据**/
-import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
-import {InMemoryDataAdNewsService} from '../core/mock/in-memory-data-adNews.service';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -24,11 +20,6 @@ import {InMemoryDataAdNewsService} from '../core/mock/in-memory-data-adNews.serv
     BrowserAnimationsModule,
     ReactiveFormsModule,
     NgZorroAntdModule, // Ant design framework
-    /**Fake Data**/
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataAdNewsService, {dataEncapsulation: false}
-    )
-
   ],
   declarations: [HeaderComponent, ContainerComponent, AdCarouselComponent],
   exports: [

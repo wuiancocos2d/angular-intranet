@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ad-carousel.component.html',
   styleUrls: ['./ad-carousel.component.scss']
 })
+
+
 export class AdCarouselComponent implements OnInit {
 
   constructor() { }
