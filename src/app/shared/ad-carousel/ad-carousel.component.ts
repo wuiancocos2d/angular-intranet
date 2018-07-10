@@ -3,7 +3,6 @@ import {NzCarouselComponent} from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-ad-carousel',
-  providers: [NzCarouselComponent],
   templateUrl: './ad-carousel.component.html',
   styleUrls: ['./ad-carousel.component.scss']
 })
@@ -11,14 +10,15 @@ import {NzCarouselComponent} from 'ng-zorro-antd';
 
 export class AdCarouselComponent implements OnInit {
   @Input() adNews: AdNewsElement[];
+  @ViewChild('NzCarouselComponent') nzCarousel: NzCarouselComponent;
 
-  constructor(private nzcarousel: NzCarouselComponent) {
+  constructor() {
   }
 
   ngOnInit() {
   }
   try() {
-    this.nzcarousel.next();
+    console.log(this.nzCarousel);
   }
 }
 
