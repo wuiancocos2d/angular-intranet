@@ -27,7 +27,22 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
       {
         name: 'Flight Information Board',
         url: './fib',
-        icon: ''
+        icon: 'https://png.icons8.com/cotton/2x/travel-by-plane.png'
+      },
+      {
+        name: 'OA',
+        url: './oa',
+        icon: 'https://png.icons8.com/color/2x/blockchain-technology.png'
+      },
+      {
+        name: 'DMS',
+        url: './oa',
+        icon: 'https://png.icons8.com/color/2x/document-footer.png'
+      },
+      {
+        name: 'ILearning',
+        url: './oa',
+        icon: 'https://png.icons8.com/color/2x/graduation-cap.png'
       },
     ];
     return {adNews};
