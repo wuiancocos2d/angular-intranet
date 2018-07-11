@@ -9,6 +9,8 @@ import {AdCarouselComponent} from './ad-carousel/ad-carousel.component';
 /** 配置 angular i18n **/
 import {registerLocaleData} from '@angular/common';
 import zh from '@angular/common/locales/zh';
+import { ApiListComponent } from './api/api-list/api-list.component';
+import { ApiComponent } from './api/api/api.component';
 
 
 registerLocaleData(zh);
@@ -21,7 +23,7 @@ registerLocaleData(zh);
     ReactiveFormsModule,
     NgZorroAntdModule, // Ant design framework
   ],
-  declarations: [HeaderComponent, ContainerComponent, AdCarouselComponent],
+  declarations: [HeaderComponent, ContainerComponent, AdCarouselComponent, ApiListComponent, ApiComponent],
   exports: [
     HeaderComponent, NgZorroAntdModule, BrowserAnimationsModule, ContainerComponent, AdCarouselComponent
   ],

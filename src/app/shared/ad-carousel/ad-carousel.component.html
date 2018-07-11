@@ -2,14 +2,14 @@
   <app-container>
     <nz-carousel [nzEffect]="'fade'" *ngIf="adNews.length" #carousel>
       <div nz-carousel-content nz-row *ngFor="let news of adNews">
-        <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+        <div nz-col nzXs="24" nzSm="24" nzMd="10" nzLg="12" nzXl="12">
           <div class="text-block">
-            <h3>{{news.title}}</h3>
+            <h2>{{news.title}}</h2>
             <span>{{news.subTitle}}</span>
           </div>
         </div>
-        <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
-          <div class="img-block"><img src={{news.imgUrl}} alt=""></div>
+        <div nz-col nzXs="24" nzSm="24" nzMd="14" nzLg="12" nzXl="12" class="img-block">
+          <div class="img-container"><img src={{news.imgUrl}} alt=""></div>
         </div>
       </div>
     </nz-carousel>

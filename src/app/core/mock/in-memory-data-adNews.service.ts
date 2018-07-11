@@ -1,5 +1,5 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
-import {AdNewsModel} from '../models';
+import {AdNewsModel, ApiModel} from '../models';
 
 export class InMemoryDataAdNewsService implements InMemoryDbService {
   createDb() {
@@ -21,6 +21,13 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
         imgUrl: 'https://i2.wp.com/www.cartwheelart.com/site/wp-content/uploads/2018/01/49-Romero.jpg?w=600',
         title: 'Amazing Landscape Photography of Mongolia',
         subTitle: 'Original Watercolor Painting'
+      },
+    ];
+    const apis: ApiModel[] = [
+      {
+        name: 'Flight Information Board',
+        url: './fib',
+        icon: ''
       },
     ];
     return {adNews};
