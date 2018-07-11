@@ -1,6 +1,6 @@
-<div class="ad-carousel-container" *ngIf="adNews.length">
+<div class="ad-carousel-container" >
   <app-container>
-    <nz-carousel [nzEffect]="'fade'">
+    <nz-carousel [nzEffect]="'fade'" *ngIf="adNews.length" #carousel>
       <div nz-carousel-content *ngFor="let news of adNews">
         <div nz-row>
           <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">

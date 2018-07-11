@@ -1,5 +1,6 @@
-import {Component, OnInit, Input, ViewChild} from '@angular/core';
+import {Component, OnInit, Input, ViewChild, AfterViewInit} from '@angular/core';
 import {NzCarouselComponent} from 'ng-zorro-antd';
+import {ContainerComponent} from '../layout/container/container.component';
 
 @Component({
   selector: 'app-ad-carousel',
@@ -8,17 +9,22 @@ import {NzCarouselComponent} from 'ng-zorro-antd';
 })
 
 
-export class AdCarouselComponent implements OnInit {
-  @Input() adNews: AdNewsElement[];
-  @ViewChild('NzCarouselComponent') nzCarousel: NzCarouselComponent;
+export class AdCarouselComponent implements OnInit, AfterViewInit {
 
+  @Input() adNews: AdNewsElement[];
+  @ViewChild('carousel', {read: NzCarouselComponent}) carsousel: NzCarouselComponent;
   constructor() {
   }
 
   ngOnInit() {
   }
+
+  ngAfterViewInit() {
+    this.try();
+  }
+
   try() {
-    console.log(this.nzCarousel);
+    this.carsousel.next();
   }
 }
 
