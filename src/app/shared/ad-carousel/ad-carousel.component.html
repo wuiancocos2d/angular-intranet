@@ -1,20 +1,17 @@
-<div class="ad-carousel-container" >
+<div class="ad-carousel-container">
   <app-container>
     <nz-carousel [nzEffect]="'fade'" *ngIf="adNews.length" #carousel>
-      <div nz-carousel-content *ngFor="let news of adNews">
-        <div nz-row>
-          <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
-            <div class="text-block">
-              <h3>{{news.title}}</h3>
-              <span>{{news.subTitle}}</span>
-            </div>
+      <div nz-carousel-content nz-row *ngFor="let news of adNews">
+        <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+          <div class="text-block">
+            <h3>{{news.title}}</h3>
+            <span>{{news.subTitle}}</span>
           </div>
-          <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
-            <div class="img-block"><img src={{news.imgUrl}} alt=""></div>
-          </div>
+        </div>
+        <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+          <div class="img-block"><img src={{news.imgUrl}} alt=""></div>
         </div>
       </div>
     </nz-carousel>
   </app-container>
-  <button (click)="try()">click me</button>
 </div>
