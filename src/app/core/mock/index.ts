@@ -1,1 +1,1 @@
-export * from './in-memory-data-adNews.service'
+export * from './in-memory-data-adNews.service';

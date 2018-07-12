@@ -1,0 +1,19 @@
+@import "../../../sharedValue";
+.list-container {
+  padding: 0 15px;
+  box-sizing: border-box;
+  @media screen and (min-width: $screen-lg-min){
+    font-size: 30px;
+  }
+  .list-title {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    @media screen and (max-width: $screen-lg-min){
+      margin-top: 15px;
+    }
+    @media screen and (min-width: $screen-lg-min){
+      margin-top: 30px;
+      font-size: 30px;
+    }
+  }
+}

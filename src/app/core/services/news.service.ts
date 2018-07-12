@@ -1,15 +1,15 @@
 import {Injectable} from '@angular/core';
-import {AdNewsModel} from '../models';
+import {NewsModel} from '../models';
 import {Observable, of} from 'rxjs';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {CoreModule} from '../core.module';
 import {catchError} from 'rxjs/operators';
 
 @Injectable({
   providedIn: CoreModule,
 })
-export class AdNewsService {
-  private adNewsUrl = 'api/adNews';
+export class NewsService {
+  private newsUrl = 'api/News';
 
   constructor(
     private http: HttpClient,
@@ -17,10 +17,10 @@ export class AdNewsService {
 
   }
 
-  getAdNews(): Observable<AdNewsModel[]> {
-    return this.http.get<AdNewsModel[]>(this.adNewsUrl)
+  getNews(): Observable<NewsModel[]> {
+    return this.http.get<NewsModel[]>(this.newsUrl)
       .pipe(
-        catchError(this.handleError('getAdNews', []))
+        catchError(this.handleError('getNews', []))
       );
   }
 

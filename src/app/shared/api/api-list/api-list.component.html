@@ -1,3 +1,5 @@
-<p>
-  api-list works!
-</p>
+<div class="api-row" nz-row>
+  <div class="api-container" *ngFor="let api of apiList" nz-col nzXs="8" nzSm="8" nzMd="6" nzLg="4" nzXl="4">
+    <app-api [api]="api"></app-api>
+  </div>
+</div>

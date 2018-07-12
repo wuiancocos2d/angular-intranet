@@ -1,0 +1,26 @@
+.api {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 10px;
+  .iconImage {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    overflow: hidden;
+    color: #f0f1f2;
+    height: 50px;
+  }
+}

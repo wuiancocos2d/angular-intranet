@@ -1,5 +1,5 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
-import {AdNewsModel, ApiModel} from '../models';
+import {AdNewsModel, ApiModel, NewsModel, MemoModel} from '../models';
 
 export class InMemoryDataAdNewsService implements InMemoryDbService {
   createDb() {
@@ -23,7 +23,7 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
         subTitle: 'Original Watercolor Painting'
       },
     ];
-    const apis: ApiModel[] = [
+    const APIs: ApiModel[] = [
       {
         name: 'Flight Information Board',
         url: './fib',
@@ -44,7 +44,93 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
         url: './oa',
         icon: 'https://png.icons8.com/color/2x/graduation-cap.png'
       },
+      {
+        name: 'ETickets',
+        url: './oa',
+        icon: 'https://png.icons8.com/dusk/2x/passenger-with-baggage.png'
+      },
+      {
+        name: 'EHR',
+        url: './oa',
+        icon: 'https://png.icons8.com/dusk/2x/groups.png'
+      },
     ];
-    return {adNews};
+    const News: NewsModel[] = [
+      {
+        id: 1,
+        title: 'Merkel Asks Mueller If There’s Anything She Can Do to Help',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 2,
+        title: 'World Cup 2018: The Tragicomic Opera of Croatia’s Mario Mandzukic',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 3,
+        title: 'Merkel Asks Mueller If There’s Anything She Can Do to Help',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 4,
+        title: 'How Trump\'s disdain for NATO could help Putin',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 5,
+        title: 'Merkel Asks Mueller If There’s Anything She Can Do to Help',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 6,
+        title: 'FBI lawyer Page threatened to be held in contempt for defying subpoena',
+        url: '/',
+        time: '2018-08-26',
+      },
+    ];
+    const Memos: MemoModel[] = [
+      {
+        id: 1,
+        title: 'Lisa Page and Taylor Swift were both no-shows at US Capitol',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 2,
+        title: 'Martin Duberman on What the Gay-Rights Movement Has Lost\n',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 3,
+        title: 'Ottessa Moshfegh’s Otherworldly Fiction',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 4,
+        title: 'My Grandmother’s Desperate Choice',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 5,
+        title: 'She Can Do to Help',
+        url: '/',
+        time: '2018-08-26',
+      },
+      {
+        id: 6,
+        title: 'Love, War, and Sandwiches',
+        url: '/',
+        time: '2018-08-26',
+      },
+    ];
+    return {adNews, APIs, News, Memos};
   }
 }

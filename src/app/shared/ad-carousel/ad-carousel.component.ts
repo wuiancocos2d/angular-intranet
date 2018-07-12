@@ -15,7 +15,6 @@ export class AdCarouselComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:resize') onResize() {
     this.carsousel.renderContent();
-    console.log(1);
   }
 
   constructor() {

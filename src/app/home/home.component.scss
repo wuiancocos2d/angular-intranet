@@ -1,0 +1,30 @@
+@import "../sharedValue";
+
+.api-container {
+  margin-top: 40px;
+  //padding: 20px 0;
+  clear: both;
+  color: #f0f1f2;
+  background: linear-gradient(to right, #544ff9 0%, #7351f4 26%, #874bff 100%)
+}
+
+.api-block-title {
+  padding: 25px 0 0;
+  color: #f0f1f2;
+  text-align: center;
+  @media screen and (max-width: $screen-lg-min){
+    font-size: 30px;
+  }
+  @media screen and (max-width: $screen-sm-min){
+    font-size: 14px;
+  }
+}
+
+.newsAndMemosBlock {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.footer-container {
+  background: #000;
+}
+

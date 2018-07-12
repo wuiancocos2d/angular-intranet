@@ -5,7 +5,7 @@ import {HomeRoutingModule} from './home-routing.module';
 
 // share component
 import {SharedModule} from '../shared';
-import {AdNewsService} from '../core/services';
+import {AdNewsService, ApisService, MemoService, NewsService} from '../core/services';
 
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataAdNewsService} from '../core/mock';
@@ -25,7 +25,10 @@ import {InMemoryDataAdNewsService} from '../core/mock';
   declarations: [HomeComponent],
   providers: [
     HomeRoutingModule,
-    AdNewsService
+    AdNewsService,
+    ApisService,
+    NewsService,
+    MemoService,
   ]
 })
 export class HomeModule {

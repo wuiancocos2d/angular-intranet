@@ -1,4 +1,26 @@
 <app-header></app-header>
-
-  <app-ad-carousel [adNews]="adNewsList"></app-ad-carousel>
+<app-ad-carousel [adNews]="adNewsList"></app-ad-carousel>
+<div class="api-container">
+  <app-container>
+    <h1 class="api-block-title">Our APPs</h1>
+    <app-api-list [apiList]="apiList"></app-api-list>
+  </app-container>
+</div>
+<div class="newsAndMemosBlock">
+  <app-container>
+    <div class="newsAndMemoContainer" nz-row>
+      <div class="news-block" nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+        <app-amlist [AmItems] = "newsList" [title]="'Most News'"></app-amlist>
+      </div>
+      <div class="memo-block" nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+        <app-amlist [AmItems] = "memoList" [title]="'Memos'"></app-amlist>
+      </div>
+    </div>
+  </app-container>
+</div>
+<div class="footer-container">
+  <app-container>
+    <app-footer></app-footer>
+  </app-container>
+</div>
 

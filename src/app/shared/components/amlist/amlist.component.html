@@ -1,0 +1,17 @@
+<div class="list-container" *ngIf="AmItems.length">
+  <h3 class="list-title" *ngIf="title">
+    {{title}}
+  </h3>
+  <nz-list  [nzDataSource]="AmItems" [nzRenderItem]="item" [nzItemLayout]="'horizontal'">
+    <ng-template #item let-item>
+      <nz-list-item>
+        <nz-list-item-meta
+          [nzTitle]="nzTitle">
+          <ng-template #nzTitle>
+            <a href="https://ng.ant.design">{{item.title}}</a>
+          </ng-template>
+        </nz-list-item-meta>
+      </nz-list-item>
+    </ng-template>
+  </nz-list>
+</div>
