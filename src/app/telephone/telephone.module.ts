@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TelephoneComponent} from './telephone.component';
+import { TelephoneRoutingModule } from './telephone-routing.module';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    TelephoneRoutingModule
   ],
-  declarations: []
+  declarations: [
+    TelephoneComponent,
+  ]
 })
 export class TelephoneModule { }
