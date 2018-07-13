@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { TelephoneComponent} from './telephone.component';
 import { TelephoneRoutingModule } from './telephone-routing.module';
 
+// share component
+import {SharedModule} from '../shared';
 
 @NgModule({
   imports: [
     CommonModule,
-    TelephoneRoutingModule
+    SharedModule,
+    TelephoneRoutingModule,
   ],
   declarations: [
     TelephoneComponent,
