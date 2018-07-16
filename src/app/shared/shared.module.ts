@@ -13,6 +13,7 @@ import {ApiListComponent} from './api/api-list/api-list.component';
 import {ApiComponent} from './api/api/api.component';
 import {AmlistComponent} from './components/amlist/amlist.component';
 import {FooterComponent} from './layout/footer/footer.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 registerLocaleData(zh);
