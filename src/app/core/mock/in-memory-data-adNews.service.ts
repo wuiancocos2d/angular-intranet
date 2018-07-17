@@ -1,5 +1,5 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
-import {AdNewsModel, ApiModel, NewsModel, MemoModel} from '../models';
+import {AdNewsModel, ApiModel, NewsModel, MemoModel, ContactModel} from '../models';
 
 export class InMemoryDataAdNewsService implements InMemoryDbService {
   createDb() {
@@ -130,7 +130,115 @@ export class InMemoryDataAdNewsService implements InMemoryDbService {
         url: '/',
         time: '2018-08-26',
       },
+
     ];
-    return {adNews, APIs, News, Memos};
+    const Contacts: ContactModel[] = [
+      {
+        id: '04652',
+        cn_name: 'Chen Hong',
+        en_name: '',
+        gender: 'male',
+        job_title: 'Chief Executive Officer',
+        job_level: 22,
+        telephone: '8396 6111',
+        apt: '8898 3288',
+        cell: '6386 2299',
+        department: 'CEO Office',
+        division: '',
+        email: 'chenhong@airmacau.com.mo',
+        address: 'MFM HDQ 18-A MFM NXOB 2F'
+      },
+      {
+        id: '04632',
+        cn_name: 'Cheong Siu Peng, Lorita ',
+        en_name: '',
+        gender: 'female',
+        department: 'CEO Office',
+        division: '',
+        job_title: 'Chief Executive Officer',
+        job_level: 21,
+        telephone: '8396 6111',
+        apt: '8898 3288',
+        cell: '6386 2299',
+        email: 'chenhong@airmacau.com.mo',
+        address: 'MFM HDQ 18-A'
+      },
+      {
+        id: '04852',
+        cn_name: 'Wen Dexin',
+        en_name: '',
+        gender: 'mail',
+        department: 'CEO Office',
+        division: 'Corporate Quality',
+        job_title: 'General Manager - Corporate Quality (ACEO)',
+        job_level: 22,
+        telephone: '8396 6070',
+        apt: '',
+        cell: '6650 8877',
+        email: 'dexin@airmacau.com.mo',
+        address: 'MFM HDQ 18-A'
+      },
+      {
+        id: '04622',
+        cn_name: 'Noronha ',
+        en_name: 'Ana Maria',
+        gender: 'female',
+        department: 'CEO Office',
+        division: 'Corporate Quality',
+        job_title: 'Corporate Quality Executive (AOC/Operations Specification)',
+        job_level: 21,
+        telephone: '8396 6249',
+        apt: '',
+        cell: '6527 7739',
+        email: 'ana.noronha@airmacau.com.mo',
+        address: 'MFM HDQ 18-A'
+      },
+      {
+        id: '04332',
+        cn_name: 'Liao Hanxi ',
+        en_name: '',
+        gender: 'female',
+        department: 'Commercial',
+        division: '',
+        job_title: 'Vice President, Commercial',
+        job_level: 22,
+        telephone: '8396 6200',
+        apt: '',
+        cell: '6356 5577',
+        email: 'liaohanxi@airmacau.com.mo',
+        address: ''
+      },
+      {
+        id: '03652',
+        cn_name: 'Wang Yu',
+        en_name: '',
+        gender: 'mail',
+        department: 'Commercial',
+        division: 'Cargo Sales',
+        job_title: 'General Manager - Corporate Quality (ACEO)',
+        job_level: 22,
+        telephone: '8396 6190',
+        apt: '',
+        cell: '6388 6737',
+        email: 'dexin@airmacau.com.mo',
+        address: 'MFM HDQ 18-A'
+      },
+      {
+        id: '02652',
+        cn_name: 'Noronha ',
+        en_name: 'Ana Maria',
+        gender: 'female',
+        department: 'CEO Office',
+        division: 'Corporate Quality',
+        job_title: 'Corporate Quality Executive (AOC/Operations Specification)',
+        job_level: 21,
+        telephone: '8396 6249',
+        apt: '',
+        cell: '6527 7739',
+        email: 'ana.noronha@airmacau.com.mo',
+        address: 'MFM HDQ 18-A'
+      },
+    ];
+    return {adNews, APIs, News, Memos, Contacts};
   }
 }

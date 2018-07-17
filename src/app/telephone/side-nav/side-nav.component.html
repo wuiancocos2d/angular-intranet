@@ -1,0 +1,103 @@
+<div style="width:240px;">
+  <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" style="margin-bottom: 10px;">
+    <i class="anticon" [class.anticon-menu-unfold]="isCollapsed" [class.anticon-menu-fold]="!isCollapsed">
+    </i>
+  </button>
+  <ul class="sideNav" [class.show]="isCollapsed" nz-menu [nzMode]="'inline'">
+    <li nz-submenu [(nzOpen)]="openMap.sub1">
+      <span title class="head-title">Headquarter</span>
+      <ul>
+        <li nz-menu-group>
+          <span title>CEO Office</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Chairman Office</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Commercial</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Customer Services</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Engineering & Maintenance</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Finance</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Flight Operations</span>
+        </li>
+        <li nz-menu-group>
+          <span title>General Affairs</span>
+        </li>
+      </ul>
+    </li>
+    <li nz-submenu [(nzOpen)]="openMap.sub2">
+      <span title class="head-title">Technical Representative</span>
+      <ul>
+        <li nz-menu-group>
+          <span title>Airbus Industries</span>
+        </li>
+        <li nz-menu-group>
+          <span title>International Aero Engines</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Travel Sky</span>
+        </li>
+      </ul>
+    </li>
+    <li nz-submenu [(nzOpen)]="openMap.sub2">
+      <span title class="head-title">Lawyers Representative</span>
+      <ul>
+        <li nz-menu-group>
+          <span title>Luis Cavaleiro de Ferreira, Ricardo Silva & Associados</span>
+        </li>
+      </ul>
+    </li>
+    <li nz-submenu [(nzOpen)]="openMap.sub3">
+      <span title class="head-title">Outstation Offices</span>
+      <ul>
+        <li nz-menu-group>
+          <span title>Bangkok</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Beijing</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Changzhou</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Chengdu</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Chongqing</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Fukuoka</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Guiyang</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Hangzhou</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Hanoi</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Hefei</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Kaohsiung</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Nanjing</span>
+        </li>
+        <li nz-menu-group>
+          <span title>Nanning</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

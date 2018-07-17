@@ -1,0 +1,17 @@
+@import "../../sharedValue";
+
+.sideNav {
+  width: 240px;
+  overflow: hidden;
+  @media screen and (max-width: $screen-sm-min) {
+    width: 0;
+
+    &.show {
+      width: 200px;
+    }
+  }
+  .head-title {
+    font-weight: 600;
+
+  }
+}
