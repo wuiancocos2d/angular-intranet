@@ -1,6 +1,6 @@
 <div class="ad-carousel-container">
   <app-container>
-    <nz-carousel [nzEffect]="'fade'" *ngIf="adNews.length" #carousel>
+    <nz-carousel [nzEffect]="'fade'" [nzEnableSwipe]= "true" *ngIf="adNews.length" #carousel>
       <div nz-carousel-content nz-row *ngFor="let news of adNews">
         <div nz-col nzXs="24" nzSm="24" nzMd="10" nzLg="12" nzXl="12">
           <div class="text-block">
