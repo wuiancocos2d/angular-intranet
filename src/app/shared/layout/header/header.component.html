@@ -3,8 +3,8 @@
     <i class="anticon anticon-menu-fold nav-phone-icon" [nzContent]="navPhone"  nz-popover nzTrigger="click" nzPlacement="bottomRight"></i>
     <ng-template #navPhone>
       <ul nz-menu [nzMode]="'inline'">
-        <li nz-menu-item [nzSelected]="true"> Home</li>
-        <li nz-menu-item> Telephone</li>
+        <li nz-menu-item [nzSelected]="true">  <a routerLink="/">Home</a></li>
+        <li nz-menu-item><a routerLink="/telephone">Telephone</a></li>
       </ul>
     </ng-template>
     <div nz-row>
